@@ -69,65 +69,14 @@
                     <span class="w-2.5 h-6 bg-teal-600 rounded-sm mr-3"></span>
                     講義一覧・学習テキスト
                 </h2>
-                <span class="text-xs text-slate-500 font-medium">全15回 順次公開</span>
+                <span class="text-xs text-slate-500 font-medium">全15回 自動同期中</span>
             </div>
 
-            <div class="space-y-3">
-                
-                <!-- 第1回（開講・リンク有効） -->
-                <a href="lec_01/index.html" class="block bg-white border border-teal-200 hover:border-teal-500 p-5 rounded-2xl shadow-sm hover:shadow-md transition-all group">
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                        <div class="flex items-start sm:items-center space-x-3">
-                            <span class="bg-teal-700 text-white text-xs font-bold px-2.5 py-1 rounded-md">第1回</span>
-                            <div>
-                                <h3 class="font-bold text-slate-900 group-hover:text-teal-700 transition-colors text-sm sm:text-base">
-                                    発達の規定要因と安心できる環境づくり ―遺伝と文化の交差点から考える教育相談―
-                                </h3>
-                                <p class="text-xs text-slate-500 mt-0.5">遺伝・環境・文化、心の理論とWhite Lie、コミック会話による合理的配慮、エピジェネティクス</p>
-                            </div>
-                        </div>
-                        <span class="text-xs text-teal-600 font-bold flex items-center shrink-0 self-end sm:self-center">
-                            受講・学習テキストへ &rarr;
-                        </span>
-                    </div>
-                </a>
-
-                <!-- 第2回（準備中） -->
-                <div class="bg-slate-100/70 border border-slate-200 p-4 rounded-2xl flex items-center justify-between opacity-75">
-                    <div class="flex items-center space-x-3">
-                        <span class="bg-slate-300 text-slate-600 text-xs font-bold px-2.5 py-1 rounded-md">第2回</span>
-                        <span class="text-sm font-medium text-slate-600">講義準備中（開講日以降に公開）</span>
-                    </div>
-                    <span class="text-xs text-slate-400">未公開</span>
+            <!-- 自動生成コンテナ（スクリプトがここに講義カードを出力します） -->
+            <div id="lecture_container" class="space-y-3">
+                <div class="p-6 text-center text-xs text-slate-400 font-mono">
+                    講義ファイルのスキャン中...
                 </div>
-
-                <!-- 第3回（準備中） -->
-                <div class="bg-slate-100/70 border border-slate-200 p-4 rounded-2xl flex items-center justify-between opacity-75">
-                    <div class="flex items-center space-x-3">
-                        <span class="bg-slate-300 text-slate-600 text-xs font-bold px-2.5 py-1 rounded-md">第3回</span>
-                        <span class="text-sm font-medium text-slate-600">講義準備中（開講日以降に公開）</span>
-                    </div>
-                    <span class="text-xs text-slate-400">未公開</span>
-                </div>
-
-                <!-- 第4回（準備中） -->
-                <div class="bg-slate-100/70 border border-slate-200 p-4 rounded-2xl flex items-center justify-between opacity-75">
-                    <div class="flex items-center space-x-3">
-                        <span class="bg-slate-300 text-slate-600 text-xs font-bold px-2.5 py-1 rounded-md">第4回</span>
-                        <span class="text-sm font-medium text-slate-600">講義準備中（開講日以降に公開）</span>
-                    </div>
-                    <span class="text-xs text-slate-400">未公開</span>
-                </div>
-
-                <!-- 第5回（準備中） -->
-                <div class="bg-slate-100/70 border border-slate-200 p-4 rounded-2xl flex items-center justify-between opacity-75">
-                    <div class="flex items-center space-x-3">
-                        <span class="bg-slate-300 text-slate-600 text-xs font-bold px-2.5 py-1 rounded-md">第5回</span>
-                        <span class="text-sm font-medium text-slate-600">講義準備中（開講日以降に公開）</span>
-                    </div>
-                    <span class="text-xs text-slate-400">未公開</span>
-                </div>
-
             </div>
         </section>
 
@@ -149,5 +98,102 @@
         <p>&copy; 2026 四国大学 発達と教育の心理学 講義ポータル All Rights Reserved.</p>
     </footer>
 
+    <!-- 各回の存在を自動スキャンしてリンクを生成するロジック -->
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            const container = document.getElementById("lecture_container");
+            const totalLectures = 15; // 全15回
+            const lectureCards = [];
+
+            // 各講義回の状態を非同期で確認
+            for (let i = 1; i <= totalLectures; i++) {
+                // 2桁プレフィックス（lec_01）および 1桁プレフィックス（lec_1）の両方をチェック
+                const numPadded = String(i).padStart(2, '0');
+                const pathsToTry = [`lec_${numPadded}/index.html`, `lec_${i}/index.html`];
+                
+                let foundPath = null;
+                let lectureHtml = null;
+
+                for (const p of pathsToTry) {
+                    try {
+                        const res = await fetch(p, { method: 'GET' });
+                        if (res.ok) {
+                            foundPath = p;
+                            lectureHtml = await res.text();
+                            break;
+                        }
+                    } catch (e) {
+                        // ファイルが存在しない場合は次へ
+                    }
+                }
+
+                if (foundPath && lectureHtml) {
+                    // HTMLテキストからタイトルを抽出
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(lectureHtml, "text/html");
+                    
+                    let titleText = "";
+                    // 1. #lecture_title 要素があれば最優先
+                    const h1Title = doc.getElementById("lecture_title");
+                    if (h1Title) {
+                        titleText = h1Title.innerText.replace(/^第\d+回[：:]\s*/, '').trim();
+                    } else if (doc.title) {
+                        // 2. <title> タグからクレンジング抽出
+                        titleText = doc.title
+                            .replace(/^.*第\d+回[：:\s]*/, '')
+                            .replace(/（フォローアップ.*）/, '')
+                            .replace(/\(フォローアップ.*\)/, '')
+                            .trim();
+                    }
+                    if (!titleText) titleText = `第${i}回 講義テキスト`;
+
+                    // 本文概要（サブタイトルやリード文）を抽出
+                    let summaryText = "";
+                    const subTitle = doc.querySelector("main h1 span");
+                    if (subTitle) {
+                        summaryText = subTitle.innerText.replace(/^[―—]/, '').replace(/[―—]$/, '').trim();
+                    } else {
+                        const firstP = doc.querySelector("main p");
+                        if (firstP) {
+                            summaryText = firstP.innerText.slice(0, 50) + "…";
+                        }
+                    }
+
+                    // アクティブなリンクカード
+                    lectureCards.push(`
+                        <a href="${foundPath}" class="block bg-white border border-teal-200 hover:border-teal-500 p-5 rounded-2xl shadow-sm hover:shadow-md transition-all group">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                                <div class="flex items-start sm:items-center space-x-3">
+                                    <span class="bg-teal-700 text-white text-xs font-bold px-2.5 py-1 rounded-md shrink-0">第${i}回</span>
+                                    <div>
+                                        <h3 class="font-bold text-slate-900 group-hover:text-teal-700 transition-colors text-sm sm:text-base">
+                                            ${titleText}
+                                        </h3>
+                                        ${summaryText ? `<p class="text-xs text-slate-500 mt-0.5">${summaryText}</p>` : ''}
+                                    </div>
+                                </div>
+                                <span class="text-xs text-teal-600 font-bold flex items-center shrink-0 self-end sm:self-center">
+                                    受講・学習テキストへ &rarr;
+                                </span>
+                            </div>
+                        </a>
+                    `);
+                } else {
+                    // 準備中のプレースホルダーカード
+                    lectureCards.push(`
+                        <div class="bg-slate-100/70 border border-slate-200 p-4 rounded-2xl flex items-center justify-between opacity-75">
+                            <div class="flex items-center space-x-3">
+                                <span class="bg-slate-300 text-slate-600 text-xs font-bold px-2.5 py-1 rounded-md">第${i}回</span>
+                                <span class="text-sm font-medium text-slate-600">講義準備中（開講日以降に公開）</span>
+                            </div>
+                            <span class="text-xs text-slate-400">未公開</span>
+                        </div>
+                    `);
+                }
+            }
+
+            container.innerHTML = lectureCards.join('');
+        });
+    </script>
 </body>
 </html>
