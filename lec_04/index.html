@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ポータルの自動スキャナーが収集・クレンジングするタイトルタグ -->
+    <title>発達と教育の心理学：第4回 乳児期の記憶と基本的信頼 ―言葉以前の身体感覚がいかにして生涯の心を創るか―（フォローアップ・学習テキスト）</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- 数式レンダリング用 MathJax 設定 -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process'
+            },
+            chtml: {
+                matchFontHeight: false
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    <style>
+        .highlight {
+            background: linear-gradient(transparent 60%, #fef08a 60%);
+            font-weight: 700;
+            color: #1e3a8a;
+        }
+        .text-justified {
+            text-align: justify;
+            text-justify: inter-character;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased line-height-relaxed">
+
+    <!-- 講義ヘッダー -->
+    <header class="bg-gradient-to-r from-teal-900 to-slate-900 text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <p id="subject_label" class="text-xs font-bold text-teal-300 uppercase tracking-wider">発達と教育の心理学</p>
+                <h1 id="lecture_title" class="text-sm sm:text-base font-bold text-white mt-0.5">第4回：乳児期の記憶と基本的信頼 ―言葉以前の身体感覚がいかにして生涯の心を創るか―</h1>
+            </div>
+            <a href="../index.html" class="text-xs bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-lg transition-colors whitespace-nowrap">講義ポータルへ戻る</a>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+        
+        <!-- タイトルエリア -->
+        <div class="text-center mb-16">
+            <p class="text-teal-600 font-bold tracking-widest text-xs sm:text-sm uppercase mb-3">第4回 フォローアップ・学習テキスト</p>
+            <h1 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+                乳児期の記憶と基本的信頼<br class="hidden sm:inline">
+                <span class="text-xl sm:text-2xl text-slate-600 font-normal block mt-2">―言葉以前の身体感覚がいかにして生涯の心を創るか―</span>
+            </h1>
+            <div class="w-16 h-1 bg-teal-600 mx-auto rounded"></div>
+        </div>
+
+        <!-- 導入リード文 -->
+        <div class="mb-12 rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-white">
+            <div class="p-6 sm:p-8 bg-gradient-to-br from-teal-50 to-slate-50 text-justified">
+                <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                    本テキストは、「発達と教育の心理学」第4回の講義内容を振り返り、私たちが思い出すことのできない人生最初の時期である「乳児期」において、記憶や認知、そして他者への信頼感がどのように芽生え、発達していくのかを体系的・物語的に学べるように構成したフォロー教材です。
+                </p>
+            </div>
+        </div>
+
+        <!-- 1. 幼児期健忘の謎とエリクソンの「基本的信頼」 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                1. 幼児期健忘の謎とエリクソンの「基本的信頼」
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                「あなたの最も古い記憶は、何歳のときのものですか？」と尋ねられたとき、多くの大人は3歳から4歳頃の出来事を思い浮かべます。心理学の調査において、初発記憶の平均年齢は約3.5歳であることが分かっており、2歳以前の出来事をエピソード記憶として言語的に思い出すことができる人はほとんどいません。乳幼児期前半の記憶が成長とともに意識から失われてしまうこの現象は、<strong class="highlight">「幼児期健忘（Infantile Amnesia）」</strong>と呼ばれています。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                ここで一つの大きな発達的パラドックスが立ち現れます。生涯発達心理学の礎を築いたエリク・エリクソン（Erik Erikson）は、その心理社会的発達理論において、人生の第1段階である「乳児期」に人間が獲得すべき最も重要な心理的課題として<strong class="highlight">「基本的信頼（Basic Trust）対 基本的不信」</strong>を掲げました。基本的信頼とは、「この世界は生きるに値する安心できる場所であり、自分には他者から愛され助けてもらう価値がある」という、人生すべての土台となる深い安心感のことです。
+            </p>
+
+            <div class="bg-teal-50/60 border border-teal-100 p-5 rounded-xl text-sm sm:text-base leading-relaxed text-justified my-4">
+                <p class="font-bold text-teal-950 mb-1">❓ なぜ思い出せない時期の経験が生涯を左右するのか？</p>
+                <p class="text-slate-800">
+                    もし私たちが乳児期の出来事をまったく思い出せないのだとしたら、なぜその時期に獲得した「基本的信頼」が大人になってからの人間関係や生き方にまで決定的な影響を与え続けるのでしょうか。その答えは、「記憶」という言葉の意味を言語によるエピソード記憶だけに限定せず、**「身体に刻み込まれる感覚や運動の記憶」**へと広げることで見えてきます。
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. 言葉以前の記憶：胎内から始まる感覚の学習 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                2. 言葉以前の記憶：胎内から始まる感覚の学習
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-6">
+                私たちは言葉を話せるようになるはるか前から、五感を通して世界の情報を全身で吸収し、記憶しています。その感覚的な学習は、誕生前の「胎内環境」においてすでに始まっています。
+            </p>
+
+            <div class="space-y-4 my-6 text-sm sm:text-base">
+                <!-- メネラ実験 -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-justified">
+                    <p class="font-bold text-teal-950 mb-1">🥕 ニンジンジュース実験（メネラら, 2001）</p>
+                    <p class="text-slate-700">
+                        妊娠後期の母親を対象に日常的にニンジンジュースを飲む群と水を飲む群に分け、離乳期にニンジン風味のシリアルを与えたところ、胎児期に羊水を通じてニンジンの風味を経験していた赤ちゃんは、拒絶反応（否定的な表情）が有意に少なく、好んで摂取しました。赤ちゃんは生まれる前から、母親の食生活を通じて味覚の親しみやすさを学習し、記憶していたのです。
+                    </p>
+                </div>
+
+                <!-- デカスパ実験 -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-justified">
+                    <p class="font-bold text-teal-950 mb-1">🎧 母親の声の聴覚記憶（デカスパとファイファー, 1980）</p>
+                    <p class="text-slate-700">
+                        新生児におしゃぶりを与え、吸う速度やリズムのパターンによって「実母の声」または「見知らぬ女性の声」が流れる実験を行いました。新生児は母親の声が流れる吸い方を自ら選択して積極的に吸い続けました。また、妊娠後期に毎日同じ絵本を読み聞かせてもらった赤ちゃんは、出生直後にその「聞き慣れたお話」を好んで選びました。胎内で繰り返し聴いていた母親の声のトーンや母語のリズムは、出生直後から正確に記憶されています。
+                    </p>
+                </div>
+
+                <!-- ロビー・コリア実験 -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-justified">
+                    <p class="font-bold text-teal-950 mb-1">🎀 モビールとキックの運動記憶（ロビー・コリアら, 1980）</p>
+                    <p class="text-slate-700">
+                        生後3ヶ月の乳児の足首と頭上のモビールをリボンで結ぶと、赤ちゃんは「キックするとモビールが揺れて面白い」という因果関係をすぐに学習し、足を盛んに動かします。そして2週間後、足にリボンを結ばない状態で同じモビールを見せたところ、モビールを見ただけで以前と同じキック行動を即座に再現しました。赤ちゃんは言語的に回想していなくても、特定の状況において身体の運動や感覚の連動として過去の経験を保持しているのです。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 赤ちゃんの頭の中に広がる世界：ものの永続性とイメージの発生 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                3. 赤ちゃんの頭の中に広がる世界：ものの永続性とイメージの発生
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                かつてのピアジェ理論では、生後間もない乳児は「今、目の前に見えているもの」にしか反応できず、視界から消えたものは存在すら認識できないと考えられていました。しかし、近年の実験手法は、赤ちゃんの認知能力が従来の想定よりもはるかに早くから働いていることを明らかにしました。
+            </p>
+
+            <div class="space-y-4 my-6 text-sm sm:text-base">
+                <!-- バイアルオン実験 -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-justified">
+                    <p class="font-bold text-teal-950 mb-1">🚪 回転スクリーンの「不可能な出来事」実験（バイアルオンら, 1985）</p>
+                    <p class="text-slate-700 mb-2">
+                        生後5ヶ月の乳児に180度回転するスクリーンを見せ、背後に木製の箱を置きました。スクリーンが箱にぶつかって途中で止まる自然な現象（可能な出来事）と、手品のように箱をすり抜けて最後まで180度倒れる不自然な現象（不可能な出来事）を見せると、赤ちゃんは不可能な出来事の方を驚いたようにじっと長く見つめました。
+                    </p>
+                    <p class="text-xs text-teal-900 font-bold bg-teal-50 p-2.5 rounded border border-teal-100">
+                        生後5ヶ月であっても、見えなくなった物体がそこに存在し続けているという「ものの永続性（Object Permanence）」を理解し、頭の中に「見えない箱のイメージ」を保持している決定的な証拠です。
+                    </p>
+                </div>
+
+                <!-- メルツォフ研究 -->
+                <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-justified">
+                    <p class="font-bold text-teal-950 mb-1">⏳ 24時間後の遅延模倣（メルツォフ, 1988）</p>
+                    <p class="text-slate-700">
+                        生後9ヶ月の乳児に大人が特殊なおもちゃの操作を見せ、その場では触らせず、24時間後の翌日に同じおもちゃを手渡したところ、乳児たちは前日に大人が見せた動作を正確に再現しました（<strong class="highlight">遅延模倣：Deferred Imitation</strong>）。乳児は刺激に対する単なる反射ではなく、他者の行動を心の中に記憶として保存し、翌日の自発的行動に利用できる能動的な学習者です。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. なぜ間違えてしまうのか：前頭前野の未発達と「A-not-Bエラー」 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                4. なぜ間違えてしまうのか：前頭前野の未発達と「A-not-Bエラー」
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                記憶やイメージを保持できるにもかかわらず、実際の行動において乳児が奇妙な失敗をしてしまう場面があります。それがピアジェの発見した<strong class="highlight">「A-not-Bエラー」</strong>です。
+            </p>
+
+            <div class="bg-slate-50 border border-slate-200 p-5 rounded-xl text-sm sm:text-base space-y-3 mb-6 text-justified">
+                <p class="font-bold text-slate-900">📦 A-not-Bエラーの現象</p>
+                <p class="text-slate-700">
+                    赤ちゃんの目の前でおもちゃを青い布（場所A）に隠して見つけさせる動作を数回繰り返した後、赤ちゃんの見ている前でゆっくりとおもちゃを隣の赤い布（場所B）へと隠し替えます。おもちゃが場所Bに移動した瞬間を見届けていたにもかかわらず、生後8〜12ヶ月頃の乳児は、以前に成功した青い布Aに再び手を伸ばしてしまいます。
+                </p>
+            </div>
+
+            <div class="bg-white border-2 border-teal-100 p-6 rounded-2xl shadow-sm text-sm sm:text-base space-y-3 text-justified mb-6">
+                <p class="font-bold text-teal-950 border-b border-slate-100 pb-2">🧠 アデル・ダイアモンド（1985）の神経科学的解明</p>
+                <p class="text-slate-800">
+                    この失敗は「おもちゃの場所が見えていないから」ではなく、脳の司令塔である<strong class="highlight">「前頭前野（Prefrontal Cortex）」の未成熟</strong>に起因しています。前頭前野が担う2つの主要機能：
+                </p>
+                <ul class="list-disc list-inside text-xs sm:text-sm text-slate-700 space-y-1 pl-2">
+                    <li><strong>ワーキングメモリ：</strong> 新しい情報を頭の中に一時的に保持し続ける機能。</li>
+                    <li><strong>反応抑制：</strong> かつて成功して習慣化してしまった優位な行動パターンをグッと我慢して差し止める機能。</li>
+                </ul>
+                <p class="text-slate-800 text-xs sm:text-sm">
+                    赤ちゃんは頭では「Bにある」と分かっていても、直前に何度も成功した「Aに手を伸ばす」という強力な運動衝動を前頭前野で抑え込むことができず、古い習慣的動作に引きずられてしまいます。心の中で分かっていることと、実際の行動を制御することの間には、脳の神経回路の発達という橋渡しが必要です。
+                </p>
+            </div>
+
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm text-sm sm:text-base text-justified">
+                <p class="font-bold text-teal-950 mb-1">🧭 アクレドーロの空間認知実験（1978）</p>
+                <p class="text-slate-700">
+                    部屋の一角の星印のある小窓からブザーが鳴って人が現れる経験を学習させた後、赤ちゃんを反対側へ180度移動させると、生後6ヶ月の乳児の83%は星印のない反対側（自分から見て直前と同じ身体の右側）を向いてしまいました。乳児の初期の世界認知は、外側の客観的空間座標ではなく、「自分の体をこう動かした」という主観的な身体感覚に深く根ざしています。
+                </p>
+            </div>
+        </section>
+
+        <!-- 5. 基本的信頼は身体に宿る：安心できる環境と保育者の力 -->
+        <section class="mb-16">
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900 border-l-4 border-teal-600 pl-4 mb-6">
+                5. 基本的信頼は身体に宿る：安心できる環境と保育者の力
+            </h2>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                これらの知見が教えてくれる最も根源的なメッセージは、<strong class="highlight">「乳児期の記憶とは、頭で思い出す言葉ではなく、身体全体で世界を感じ取る感覚の集積である」</strong>という事実です。
+            </p>
+            <p class="text-slate-700 leading-relaxed text-justified mb-4">
+                自分という明確な自我の輪郭がまだなく、言葉による論理的思考もできない乳児期において、赤ちゃんは感覚と運動の相互作用を通じて世界を探索しています。お腹が空いて泣いたときに温かく抱き上げられ、ミルクを与えられる。おむつが濡れて不快になったときに優しく声をかけられ、心地よい状態へと戻される。
+            </p>
+
+            <div class="bg-slate-900 text-slate-100 p-6 rounded-2xl shadow-md text-sm sm:text-base leading-relaxed text-justified space-y-3 mb-6">
+                <p class="text-amber-300 font-bold border-b border-slate-700 pb-2">🌟 身体に刻印される「世界への確信」</p>
+                <p class="text-slate-300">
+                    応答的で予測可能なケアを何百回、何千回と繰り返される経験を通じて、赤ちゃんの神経系には「自分から働きかければ、世界は温かく応えてくれる」「この世界はそれほど恐ろしい場所ではない」「自分には助けてもらう価値がある」という確信が、言語を超えた身体の深い感覚として刻印されていきます。
+                </p>
+                <p class="text-slate-300 pt-2 border-t border-slate-800">
+                    逆境的小児期体験（ACE）が身体や脳の過剰警戒システムを作り上げるのと裏表の関係として、乳児期に注がれた「安心できる環境」と「温かな応答」は、生涯にわたってストレスから心身を守り抜く強靭な免疫（レジリエンス）となって生き続けます。
+                </p>
+            </div>
+
+            <p class="text-slate-700 leading-relaxed text-justified font-medium bg-teal-50/60 p-4 rounded-xl border border-teal-100">
+                たとえ幼児期健忘によって、誰に抱っこされ、どんな言葉をかけられたのかを思い出せなくなったとしても、その時に獲得した「世界への基本的信頼」は身体と心の中で脈々と息づいています。子どもたちが安心して息をし、世界への信頼を育む環境を整えること。保育者や教育者が担っている役割は、まさに人間が人間らしく幸せに生きていくための「心の根っこ」を耕す尊い実践です。
+            </p>
+        </section>
+
+        <hr class="border-slate-200 my-12">
+
+        <!-- 理解度確認テスト ＆ 出席・提出フォーム -->
+        <section class="bg-white border border-slate-200 rounded-2xl shadow-md p-6 sm:p-8">
+            <h2 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
+                <span class="bg-teal-600 text-white text-xs px-2.5 py-1 rounded-md mr-3">課題提出</span>
+                💡 理解度確認テスト（全8問） ＆ 出席・提出フォーム
+            </h2>
+
+            <form id="lecture_form" onsubmit="submitForm(event)" class="space-y-6">
+                
+                <!-- 第1問 -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-150">
+                    <p class="font-bold text-slate-800 text-sm sm:text-base mb-3">
+                        【第1問】エリクソンが提唱した心理社会的発達理論において、人生の第1段階である「乳児期」に獲得すべき最も根本的な心理的課題（危機）はどれですか。
+                    </p>
+                    <div class="space-y-3 text-sm sm:text-base">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="A" required class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">A) 勤勉性 対 劣等感</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="B" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">B) 自主性 対 罪悪感</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="C" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">C) 基本的信頼 対 基本的不信</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q1" value="D" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">D) 親密性 対 孤立</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 第2問 -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-150">
+                    <p class="font-bold text-slate-800 text-sm sm:text-base mb-3">
+                        【第2問】大人が乳幼児期前半（おおむね2〜3歳以前）の出来事を言語的なエピソード記憶として思い出すことができない発達的現象を何と呼びますか。
+                    </p>
+                    <div class="space-y-3 text-sm sm:text-base">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="A" required class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">A) 幼児期健忘</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="B" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">B) A-not-Bエラー</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="C" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">C) 逆境的小児期体験</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q2" value="D" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">D) 選択的注意の欠如</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 第3問 -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-150">
+                    <p class="font-bold text-slate-800 text-sm sm:text-base mb-3">
+                        【第3問】生後3ヶ月の乳児の足首と頭上のモビールをリボンで結び、キック動作とモビールの連動を調べたロビー・コリアらの実験（1980年）から明らかになったこととして、最も適切なものはどれですか。
+                    </p>
+                    <div class="space-y-3 text-sm sm:text-base">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q3" value="A" required class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">A) 赤ちゃんは母親の声を聞かない限り、足を動かす学習を一切成立させることができない。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q3" value="B" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">B) 赤ちゃんは24時間以上経過するとすべての記憶を失い、同じおもちゃを見せても全く反応しない。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q3" value="C" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">C) 生後3ヶ月の乳児は前頭前野が完全に成熟しているため、大人のような論理的推論によって運動を制御している。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q3" value="D" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">D) 言葉で回想して説明できなくても、赤ちゃんは過去の経験を身体の運動や感覚の記憶として保持している。</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 第4問 -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-150">
+                    <p class="font-bold text-slate-800 text-sm sm:text-base mb-3">
+                        【第4問】新生児が母親の声と見知らぬ女性の声を聞き分けることを、おしゃぶりを吸うパターン（吸啜行動）を用いて実証した研究者ペアは誰ですか。
+                    </p>
+                    <div class="space-y-3 text-sm sm:text-base">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q4" value="A" required class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">A) バイアルオンとピアジェ</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q4" value="B" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">B) デカスパとファイファー</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q4" value="C" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">C) ダイアモンドとメルツォフ</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q4" value="D" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">D) エリクソンとフェレッティ</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 第5問 -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-150">
+                    <p class="font-bold text-slate-800 text-sm sm:text-base mb-3">
+                        【第5問】生後5ヶ月の乳児に180度回転するスクリーンを見せ、背後に置かれた箱をすり抜けるような「不可能な出来事」を長く注視することを示したバイアルオンらの実験（1985年）が証明した概念はどれですか。
+                    </p>
+                    <div class="space-y-3 text-sm sm:text-base">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q5" value="A" required class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">A) ものの永続性（視界から隠れても物体は存在し続けているという理解）</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q5" value="B" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">B) 幼児期健忘の完全な解消</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q5" value="C" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">C) 遅延模倣反応（24時間前の大人の行動を真似る力）</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q5" value="D" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">D) 空間認知における客観的ランドマークの完全な獲得</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 第6問 -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-150">
+                    <p class="font-bold text-slate-800 text-sm sm:text-base mb-3">
+                        【第6問】メネラら（2001年）が行った「妊娠中の母親のニンジンジュース摂取」に関する研究結果の説明として、最も適切なものはどれですか。
+                    </p>
+                    <div class="space-y-3 text-sm sm:text-base">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q6" value="A" required class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">A) 胎児期にニンジンを経験した乳児は、苦味への警戒心が強まり、出生後にあらゆる固形物を食べなくなった。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q6" value="B" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">B) 母親の食事内容は羊水や胎児に一切影響を及ぼさず、乳児の食嗜好は生後6ヶ月以降の環境のみで決定される。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q6" value="C" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">C) 胎児期に羊水を通じて風味を経験した乳児は、離乳期にニンジン風味のシリアルを与えられた際、嫌がる表情が少なく好んで摂取した。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q6" value="D" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">D) ニンジンジュースを摂取した母親から生まれた子どもは、生後すぐのA-not-Bエラーを完全に克服した。</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 第7問 -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-150">
+                    <p class="font-bold text-slate-800 text-sm sm:text-base mb-3">
+                        【第7問】生後9ヶ月の乳児が、大人が見せた珍しいおもちゃの操作を24時間後にも正確に再現できることを実証した、メルツォフ（1988年）の研究が示した能力はどれですか。
+                    </p>
+                    <div class="space-y-3 text-sm sm:text-base">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q7" value="A" required class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">A) 生理的早産</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q7" value="B" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">B) 基本的不信</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q7" value="C" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">C) 非注意性盲目</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q7" value="D" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">D) 遅延模倣（Deferred Imitation）</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 第8問 -->
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-150">
+                    <p class="font-bold text-slate-800 text-sm sm:text-base mb-3">
+                        【第8問】アデル・ダイアモンド（1985年）の研究において、乳児が目の前でおもちゃを隠された場所Bではなく、直前に成功した場所Aを探してしまう「A-not-Bエラー」を起こす主要な神経学的要因は何と説明されていますか。
+                    </p>
+                    <div class="space-y-3 text-sm sm:text-base">
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q8" value="A" required class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">A) 網膜の視覚受容体が未熟であり、おもちゃが移動した光景を物理的に知覚できていないため。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q8" value="B" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">B) 前頭前野が未発達であり、情報を保持するワーキングメモリと、過去の習慣的行動を抑える反応抑制の機能がまだ未熟であるため。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q8" value="C" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">C) 胎内環境においてテストステロンを過剰に浴びたことで、探索行動に対する意欲が低下しているため。</span>
+                        </label>
+                        <label class="flex items-start space-x-3 cursor-pointer">
+                            <input type="radio" name="q8" value="D" class="w-4 h-4 mt-1 text-teal-600 focus:ring-teal-500">
+                            <span class="text-slate-700">D) エリクソンの基本的信頼が確立しておらず、実験者に対する猜疑心から意図的に間違えているため。</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 学籍番号 & 氏名入力 -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label for="student_id" class="block text-sm font-bold text-slate-700 mb-2">学籍番号</label>
+                        <input type="text" id="student_id" required placeholder="例: 13（半角数字）" 
+                               class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none text-slate-800">
+                    </div>
+                    <div>
+                        <label for="student_name" class="block text-sm font-bold text-slate-700 mb-2">氏 名</label>
+                        <input type="text" id="student_name" required placeholder="例: 四国 太郎" 
+                               class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none text-slate-800">
+                    </div>
+                </div>
+
+                <!-- 質問・感想 -->
+                <div>
+                    <label for="student_feedback" class="block text-sm font-bold text-slate-700 mb-2">本日の講義の感想・乳児期の記憶や基本的信頼の育ちについての考察（任意）</label>
+                    <textarea id="student_feedback" rows="4" placeholder="今回の復習内容（幼児期健忘、基本的信頼、胎内での感覚学習、ものの永続性、A-not-Bエラーなど）について、学んだことや感想を自由に入力してください。"
+                              class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none text-slate-800 text-sm sm:text-base"></textarea>
+                </div>
+
+                <!-- 送信ボタン -->
+                <div class="pt-2">
+                    <button type="submit" id="submit_btn" 
+                            class="w-full sm:w-auto bg-teal-700 hover:bg-teal-800 text-white font-bold px-8 py-3 rounded-xl transition-all shadow-md hover:shadow-lg active:scale-98 cursor-pointer text-sm sm:text-base">
+                        すべての内容を理解し、芝崎先生へ送信する
+                    </button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-8 text-xs border-t border-slate-800 mt-20">
+        <p>&copy; 2026 四国大学 発達と教育の心理学 講義ポータル All Rights Reserved.</p>
+    </footer>
+
+    <!-- Formspree 送信ロジック（全8問自動採点対応） -->
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+
+            const studentId = document.getElementById("student_id").value.trim();
+            const studentName = document.getElementById("student_name").value.trim();
+            const feedback = document.getElementById("student_feedback").value.trim() || "特になし";
+            const btn = document.getElementById("submit_btn");
+
+            // 正解キー定義（全8問）
+            const correctAnswers = {
+                q1: "C",
+                q2: "A",
+                q3: "D",
+                q4: "B",
+                q5: "A",
+                q6: "C",
+                q7: "D",
+                q8: "B"
+            };
+
+            let scoreCount = 0;
+            const answers = {};
+
+            for (let i = 1; i <= 8; i++) {
+                const selected = document.querySelector(`input[name="q${i}"]:checked`);
+                const val = selected ? selected.value : "";
+                answers[`問${i}解答`] = val;
+                if (val === correctAnswers[`q${i}`]) {
+                    scoreCount++;
+                }
+            }
+
+            const scoreRate = Math.floor((scoreCount / 8) * 100) + "%";
+            const subjectLabel = document.getElementById("subject_label").innerText;
+            const lectureTitle = document.title;
+
+            const payloadData = {
+                "科目区分": subjectLabel,
+                "講義回": lectureTitle,
+                "学籍番号": studentId,
+                "氏名": studentName,
+                "クイズ得点率": scoreRate,
+                ...answers,
+                "学生からの質問・感想": feedback
+            };
+
+            const FORMSPREE_ID = "xjgqbqnl"; 
+
+            btn.disabled = true;
+            btn.innerText = "送信中...";
+
+            fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+                method: "POST",
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(payloadData)
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert(`正常に記録されました（学籍番号: ${studentId}、正解数: ${scoreCount}/8問、得点率: ${scoreRate}）。第4回受講完了として受領しました。`);
+                    btn.innerText = "送信完了";
+                } else {
+                    throw new Error("APIエラー");
+                }
+            })
+            .catch(error => {
+                console.error("Submission Error:", error);
+                alert("送信に失敗しました。時間をおいて再度送信ボタンを押してください。");
+                btn.disabled = false;
+                btn.innerText = "すべての内容を理解し、芝崎先生へ送信する";
+            });
+        }
+    </script>
+</body>
+</html>
